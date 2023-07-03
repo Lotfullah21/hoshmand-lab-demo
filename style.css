@@ -4,11 +4,7 @@
 /* * {
   border: 1px solid red;
 } */
-* {
-  margin: 0;
-  padding: 0;
-  /* box-sizing: border-box; */
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -75,12 +71,6 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.animation {
-  animation: slideFromTop;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-}
 
 .content-center h1 {
   letter-spacing: 1.3px;
@@ -103,36 +93,10 @@ button {
   border-radius: 2px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  animation: slideFromBottom;
-  animation-duration: 2s;
 }
 
 a {
   text-decoration: none;
   color: #fff;
   background: transparent;
-}
-
-/* Animation */
-
-@keyframes slideFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes slideFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
 }
